@@ -2,7 +2,7 @@ package Assignment1;
 
 public class BinarySearch {
 	
-	public static void binarySearch(int[] arr, int key) {
+	public static int binarySearch(int[] arr, int key) {
 		int first = 0;
 		int last = arr.length - 1;
 		int mid = (first + last) / 2;
@@ -15,12 +15,13 @@ public class BinarySearch {
 				last = mid - 1;
 			}
 			else {
-				System.out.println(mid);
-				break;
+				return mid;
 			}
 			
 			mid = (first + last) / 2;
 		}
+		
+		return -1;
 	}
 	
 	public static void main(String[] args) {

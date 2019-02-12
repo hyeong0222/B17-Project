@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class SelectionSort {
 	
-	public static void selectionSort (int[] arr) {
+	public static int[] selectionSort (int[] arr) {
 		
 		int n = arr.length;
 		
@@ -23,7 +23,7 @@ public class SelectionSort {
 			arr[i] = temp;
 		}
 		
-		System.out.println(Arrays.toString(arr));
+		return arr;
 	}
 	
 	public static void main(String[] args) {

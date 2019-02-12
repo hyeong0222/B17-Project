@@ -6,21 +6,23 @@ public class PrimeNumber {
 	 * 
 	 */
 	
-	public static void prime (int n) {
+	public static String prime (int n) {
 		
 		int num = 2;
 		int count = 0;
+		String ans = "";
 		
 		while (count < n) {
 			if (isPrime(num)) {
-				System.out.print(num + " ");
+				ans += num + " ";
+//				System.out.print(num + " ");
 				count++;
 			}
 			
 			num++;
-			
 		}
 		
+		return ans;
 	}
 	
 	public static boolean isPrime (int n) {
@@ -32,7 +34,8 @@ public class PrimeNumber {
 		return true;
 	}
 	
+	
 	public static void main(String[] args) {
-		prime(5);
+		System.out.println(prime(5));
 	}
 }

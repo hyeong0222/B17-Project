@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class InsertionSort {
 	
-	public static void insertionSort(int[] arr) {
+	public static int[] insertionSort(int[] arr) {
 		int n = arr.length;
 		
 		for (int i = 1; i < n; i++) {
@@ -18,7 +18,7 @@ public class InsertionSort {
 			arr[j] = key;
 		}
 		
-		System.out.println(Arrays.toString(arr));
+		return arr;
 	}
 	
 	public static void main(String[] args) {

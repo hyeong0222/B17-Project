@@ -4,7 +4,7 @@ import java.util.Arrays;
 
 public class BubbleSort {
 	
-	public static void bubbleSort (int[] arr) {
+	public static int[] bubbleSort (int[] arr) {
 		int n = arr.length;
 		int temp = 0;
 		
@@ -18,7 +18,8 @@ public class BubbleSort {
 			}
 		}
 		
-		System.out.println(Arrays.toString(arr));
+		return arr;
+//		System.out.println(Arrays.toString(arr));
 	}
 	
 	public static void main(String[] args) {
